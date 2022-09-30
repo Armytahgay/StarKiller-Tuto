@@ -1,0 +1,273 @@
+
+body {
+    background-image: url("bg.PNG");
+    overflow: hidden;
+    animation: slideInAnimation ease 1.5s;
+}
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translate(0, -10em);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    cursor: default;
+    margin: 1%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    border: 2px solid red;
+    border-radius: 25%;
+
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.5em;
+
+    font-family: courier, serif;
+    font-weight: bold;
+    font-variant: small-caps;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+    background-color: #ff3333;
+    color: black;
+}
+
+nav button {
+    padding: 0.5em;
+}
+
+h1 {
+    color: red;
+    font-family: Lucida Handwriting, gabriola, serif;
+    font-size: 3em;
+    font-variant: small-caps;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    font-weight: bold;
+    font-family: Goudy Old Style, gabriola, serif;
+    letter-spacing: 2px;
+    color: yellow;
+    font-size: 2em;
+    opacity: 0.9;
+    text-shadow: 2px 2px 2px red;
+}
+
+div {
+    padding: 2em;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: courier, serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.small {
+    width: 10%;
+    animation: rotation 40s linear infinite;
+}
+
+@keyframes rotation {
+    from { transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg);}
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    color: red;
+}
+
+hr {
+    color: white;
+    width: 70%;
+}
+
+/*----------------------- Index -------------------------*/
+
+.indexContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+
+    margin: 5vmax 1em 5vmax 1em;
+}
+
+.indexImg {
+    border: 2px solid red;
+    width: 80%;
+}
+
+.indexNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.indexNav button {
+    margin: 1%;
+    padding: 3%;
+}
+
+/*----------------------- Page d'intro -------------------------*/
+
+.introContainer div {
+    margin: 0 7em 0 7em;
+}
+
+div a {
+    text-align: center;
+    font-family: courier, serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div a:link, div a:visited {
+    color: yellow;
+}
+
+div a:link:active, div a:visited:active {
+    color: black;
+}
+
+/*----------------------- Page de propaganda -------------------------*/
+
+.joinContainer {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3vmax 1em 3vmax 1em;
+}
+
+.joinContainer img {
+    width: auto;
+    max-height: 35em;
+}
+
+/*----------------------- Page step 1 -------------------------*/
+
+.step1Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.step1Img {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*----------------------- Page step 2 -------------------------*/
+
+.step2Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.step2Img {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.imp {
+    color: yellow;
+    opacity: 0.9;
+    text-shadow: 2px 2px 2px red;
+
+    font-family: courier, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/*----------------------- Page step 3 -------------------------*/
+
+.step3Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.step3Container p, .step3Container div {
+    text-align: left;
+    margin: 0;
+}
+
+ul p:first-child {
+    color: yellow;
+}
+
+ul p:last-child {
+    margin-left: 2.5%;
+}
+
+.plan {
+    margin: auto;
+}
+
+.plan div {
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.plan img {
+    vertical-align: middle;
+    width: 35%;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+/*.plan img:hover {
+    position: absolute;
+    border: 2px solid #ff3333;
+    width: 40%;
+    margin-top: -5em;
+    margin-left: -5em;
+}*/
+
+/*----------------------- Page result -------------------------*/
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.resultContainer img {
+    width: 50%;
+    border: 2px solid red;
+}
